@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+  <sys_ws_operation action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <consumes>application/json,application/xml,text/xml</consumes>
+    <consumes_customized>false</consumes_customized>
+    <default_operation_uri/>
+    <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+    <http_method>POST</http_method>
+    <name>Webhook Endpoint</name>
+    <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	
+    var box_util = new BoxWebhookEventBuilder();
+    var keys = box_util.getKeys(request.body.data.trigger);
+    var timestamp = request.headers["box-delivery-timestamp"] + "";
+    var primary_signature = request.headers["box-signature-primary"];
+    var secondary_signature = request.headers["box-signature-secondary"];
+    var mac = new CertificateEncryption;
+    var primary_key = gs.base64Encode(keys["primary_key"]);
+    var secondary_key = gs.base64Encode(keys["secondary_key"]);
+    var hmac_primary_key = mac.generateMac(primary_key, "HmacSHA256", JSON.stringify(request.body.data) + timestamp);
+    var hmac_secondary_key = mac.generateMac(secondary_key, "HmacSHA256", JSON.stringify(request.body.data) + timestamp);
+   
+    if (hmac_primary_key == primary_signature && hmac_secondary_key == secondary_signature) {
+        var inputs = {};
+        inputs['file_id'] = request.body.data.source["id"];
+        inputs['file_name'] = request.body.data.source["type"];
+        inputs['item_type'] = request.body.data.source["name"];
+        inputs['webhook_id'] = request.body.data.webhook["id"];
+        if (request.body.data.source["id"] && request.body.data.source["type"] && request.body.data
+            .source["name"]) {
+            var flow_name = 'sn_box_spoke.' + box_util.matchEvent(request.body.data.trigger);
+            if (flow_name)
+                var stream = sn_fd.FlowAPI.executeSubflow(flow_name, inputs);
+            else
+                gs.error("Couldn't find flow with name: " + flow_name + " in 'sn_box_spoke' scope");
+        } else
+            gs.error("Inputs  ID, Name or Type is not valid please verify payload!");
+    } else
+        gs.error("Signatures not matching!");
+
+})(request, response);]]></operation_script>
+    <operation_uri>/api/sn_box_spoke/box_spoke_webhook_endpoints/webhook_endpoint</operation_uri>
+    <produces>application/json,application/xml,text/xml</produces>
+    <produces_customized>false</produces_customized>
+    <relative_path>/webhook_endpoint</relative_path>
+    <request_example/>
+    <requires_acl_authorization>true</requires_acl_authorization>
+    <requires_authentication>false</requires_authentication>
+    <requires_snc_internal_role>true</requires_snc_internal_role>
+    <short_description/>
+    <sys_class_name>sys_ws_operation</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-02-23 02:50:11</sys_created_on>
+    <sys_id>9fcaf9f00f222010747dc7d92f767ea4</sys_id>
+    <sys_mod_count>47</sys_mod_count>
+    <sys_name>Webhook Endpoint</sys_name>
+    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+    <sys_update_name>sys_ws_operation_9fcaf9f00f222010747dc7d92f767ea4</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-03-12 10:18:39</sys_updated_on>
+    <web_service_definition display_value="Box Spoke Webhook Endpoints">866350700f222010747dc7d92f767e03</web_service_definition>
+    <web_service_version/>
+  </sys_ws_operation>
+</record_update>

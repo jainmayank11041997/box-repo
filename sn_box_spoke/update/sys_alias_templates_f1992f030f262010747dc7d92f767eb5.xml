@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias_templates">
+  <sys_alias_templates action="INSERT_OR_UPDATE">
+    <default_data_template>{&#13;
+    "credential": {&#13;
+        "oauth_entity": {&#13;
+            "oauth_entity_profile": [{&#13;
+                "grant_type": "authorization_code",&#13;
+                "name": "Box V3 default_profile",&#13;
+                "default": true,&#13;
+                "oauth_entity_profile_scope": [&#13;
+                   &#13;
+                ]&#13;
+            }],&#13;
+            "code_challenge_method": "S256",&#13;
+            "type": "consumer",&#13;
+            "oauth_entity_scope": [&#13;
+            ],&#13;
+            "client_id": "",&#13;
+            "use_mutual_auth": false,&#13;
+            "revoke_token_url": "",&#13;
+            "default_grant_type": "authorization_code",&#13;
+            "public_client": false,&#13;
+            "oauth_api_script": "",&#13;
+            "name": "    Default",&#13;
+            "client_secret": "",&#13;
+            "auth_url": "https://account.box.com/api/oauth2/authorize",&#13;
+            "token_url": "https://api.box.com/oauth2/token",&#13;
+            "redirect_url": "",&#13;
+            "access_token_lifespan": 15552000&#13;
+        },&#13;
+        "name": "",&#13;
+        "table": "oauth_2_0_credentials"&#13;
+    },&#13;
+    "connection": {&#13;
+        "use_mid": false,&#13;
+        "connection_url": "https://api.box.com",&#13;
+        "name": "Box",&#13;
+        "table": "http_connection"&#13;
+    }&#13;
+}</default_data_template>
+    <dynamic_data_schema>&#13;
+&#13;
+{&#13;
+    "connection_fields": [{&#13;
+            "name": "connection.name",&#13;
+            "label": "Connection Name",&#13;
+            "type": "text",&#13;
+            "defaultValue": "&lt;provider-name&gt; Spoke Connection",&#13;
+            "hint": "Display name for the Connection",&#13;
+            "mandatory": true&#13;
+        },&#13;
+        {&#13;
+            "name": "connection.connection_url",&#13;
+            "label": "Connection URL",&#13;
+            "type": "text",&#13;
+            "defaultValue": "https://&lt;provider-domain-name&gt;.com",&#13;
+            "hint": "Connection URL for provider"&#13;
+        }&#13;
+    ],&#13;
+    "credential_fields": [{&#13;
+            "name": "credential.name",&#13;
+            "label": "Credential Name",&#13;
+            "type": "text",&#13;
+            "hint": "Name of the Credential Record"&#13;
+        },&#13;
+        {&#13;
+            "name": "credential.oauth_entity.name",&#13;
+            "label": "OAuth Name",&#13;
+            "type": "text",&#13;
+            "hint": "Name of the Application Registry"&#13;
+        },&#13;
+        {&#13;
+            "name": "credential.oauth_entity.client_id",&#13;
+            "label": "OAuth Client ID",&#13;
+            "type": "text",&#13;
+            "hint": "Client ID for provider"&#13;
+        },&#13;
+        {&#13;
+            "name": "credential.oauth_entity.client_secret",&#13;
+            "label": "OAuth Client Secret",&#13;
+            "type": "password",&#13;
+            "hint": "Client Secret for provider"&#13;
+        },&#13;
+        {&#13;
+            "name": "credential.oauth_entity.redirect_url",&#13;
+            "label": "OAuth Redirect URL",&#13;
+            "type": "text",&#13;
+            "defaultValue": "https://&lt;instance-name&gt;.service-now.com/oauth_redirect.do",&#13;
+            "hint": "Callback URL for provider"&#13;
+        }&#13;
+    ]&#13;
+}</dynamic_data_schema>
+    <name>Box OAuth Template</name>
+    <on_edit_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+   // aliasId: sys_id of the alias record
+   // connectionSysId: sys_id of the connection record created by using the default and dynamic data
+   // jsonDefaultData (String): The default JSON template data from template table
+   // e.g. var jsonDefaultParsed = JSON.parse(jsonDefaultData);
+   //      gs.info("default connection url =  jsonDefaultParsed["connection"]["connection_url"]);
+   // jsonDynamicData (String): User input based on the key/values defined in "Dynamic Data"
+   // e.g. var jsonDynamicParsed = JSON.parse(jsonDynamicData);
+   //      gs.info("dynamic connection url =  jsonDynamicParsed["connection.connection_url"]);
+})(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
+]]></on_edit_script>
+    <post_process_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+   // aliasId: sys_id of the alias record
+   // connectionSysId: sys_id of the connection record created by using the default and dynamic data
+   // jsonDefaultData (String): The default JSON template data from template table
+   // e.g. var jsonDefaultParsed = JSON.parse(jsonDefaultData);
+   //      gs.info("default connection url =  jsonDefaultParsed["connection"]["connection_url"]);
+   // jsonDynamicData (String): User input based on the key/values defined in "Dynamic Data"
+   // e.g. var jsonDynamicParsed = JSON.parse(jsonDynamicData);
+   //      gs.info("dynamic connection url =  jsonDynamicParsed["connection.connection_url"]);
+})(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
+]]></post_process_script>
+    <sys_class_name>sys_alias_templates</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-03-02 10:41:24</sys_created_on>
+    <sys_id>f1992f030f262010747dc7d92f767eb5</sys_id>
+    <sys_mod_count>0</sys_mod_count>
+    <sys_name>Box OAuth Template</sys_name>
+    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+    <sys_update_name>sys_alias_templates_f1992f030f262010747dc7d92f767eb5</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-03-02 10:41:24</sys_updated_on>
+  </sys_alias_templates>
+</record_update>

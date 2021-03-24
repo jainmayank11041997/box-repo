@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+  <sys_script_vtable action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <advanced>false</advanced>
+    <cache_isolation_level>USER</cache_isolation_level>
+    <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+    <cache_ttl>0</cache_ttl>
+    <name>Look up Retention Policy</name>
+    <script><![CDATA[(function executeQuery(v_table, v_query) {
+    var inputs = {};
+    var stream = sn_fd.FlowAPI.executeDataStreamAction('sn_box_spoke.look_up_retention_policies', inputs);
+    while (stream.hasNext()) {
+        var item = stream.next();
+        var retention_policy = {};
+        retention_policy["u_id"] = item["id"];
+        retention_policy["u_type"] = item["type"];
+        retention_policy["u_policy_name"] = item["policy_name"];
+        retention_policy["u_disposition_action"] = item["disposition_action"];
+        retention_policy["u_retention_length"] = item["retention_length"];
+        retention_policy["u_status"] = item["status"];
+        v_table.addRow(retention_policy);
+    }
+})(v_table, v_query);]]></script>
+    <sys_class_name>sys_script_vtable</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2021-02-19 05:45:35</sys_created_on>
+    <sys_domain>global</sys_domain>
+    <sys_domain_path>/</sys_domain_path>
+    <sys_id>ecacb9230f522010747dc7d92f767e99</sys_id>
+    <sys_mod_count>9</sys_mod_count>
+    <sys_name>Look up Retention Policy</sys_name>
+    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+    <sys_update_name>sys_script_vtable_ecacb9230f522010747dc7d92f767e99</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2021-03-01 19:06:50</sys_updated_on>
+    <table>sn_box_spoke_st_retention_policies</table>
+  </sys_script_vtable>
+</record_update>
