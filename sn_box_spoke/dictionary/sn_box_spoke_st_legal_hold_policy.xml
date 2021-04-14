@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="read_only=true" scriptable_table="true" label="Legal Hold Policy" max_length="40" name="sn_box_spoke_st_legal_hold_policy" sizeclass="1" type="collection">
-        <element  label="Type" max_length="40" name="u_type" type="string"/>
-        <element  label="ID" max_length="40" name="u_id" type="string"/>
-        <element  label="Policy Name" max_length="40" name="u_policy_name" type="string"/>
-        <element  label="Status" max_length="40" name="u_status" type="string"/>
-        <element  label="Description" max_length="40" name="u_description" type="string"/>
+    <element attributes="read_only=true" label="Legal Hold Policy" max_length="40" name="sn_box_spoke_st_legal_hold_policy" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ID" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Policy Name" max_length="40" name="u_policy_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Type" max_length="40" name="u_type" type="string"/>
     </element>
 </database>

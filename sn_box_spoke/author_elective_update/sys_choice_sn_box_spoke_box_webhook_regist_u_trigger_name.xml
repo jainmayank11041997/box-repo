@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_trigger_name" table="sn_box_spoke_box_webhook_regist" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_trigger_name</element>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_id>26e68f891b2f681026a82131604bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_trigger_name</sys_name>
+            <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+            <sys_update_name>sys_choice_sn_box_spoke_box_webhook_regist_u_trigger_name</sys_update_name>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Collaboration Accepted</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6ae68f891b2f681026a82131604bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>COLLABORATION.ACCEPTED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Collaboration Created</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2e64f891b2f681026a82131604bcbf7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>COLLABORATION.CREATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Collaboration Rejected</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ee68f891b2f681026a82131604bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>COLLABORATION.REJECTED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Collaboration Removed</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eae68f891b2f681026a82131604bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>COLLABORATION.REMOVED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Collaboration Deleted</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aae68f891b2f681026a82131604bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>COLLABORATION.UPDATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Comment Created</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6e64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>COMMENT.CREATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Comment Deleted</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ae64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>COMMENT.DELETED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Comment Updated</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6ae64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>COMMENT.UPDATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Copied</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a2e64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.COPIED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Deleted</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22e64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.DELETED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Downloaded</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aee64f891b2f681026a82131604bcbf5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.DOWNLOADED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Locked</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26e64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.LOCKED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Moved</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2e64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.MOVED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Previewed</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eee64f891b2f681026a82131604bcbf5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.PREVIEWED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Renamed</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6e64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.RENAMED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Restored</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>62e64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.RESTORED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Trashed</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22e68f891b2f681026a82131604bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.TRASHED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Unlocked</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>66e64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.UNLOCKED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Uploaded</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6ee64f891b2f681026a82131604bcbf5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FILE.UPLOADED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Folder Created</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eee64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FOLDER.CREATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Folder Deleted</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22e64f891b2f681026a82131604bcbf7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FOLDER.DELETED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Folder Renamed</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6ee64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FOLDER.RENAMED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Folder Restored</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aee64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FOLDER.RESTORED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Folder Updated</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>62e64f891b2f681026a82131604bcbf7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>FOLDER.UPDATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Metadata Instance  Created</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ee64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>METADATA_INSTANCE.DELETED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Shared Link Removed</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aee68f891b2f681026a82131604bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>SHARED_LINK.CREATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Shared Link Deleted</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6ee68f891b2f681026a82131604bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>SHARED_LINK.DELETED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Shared Link Updated</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eee68f891b2f681026a82131604bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>SHARED_LINK.UPDATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Task Assignment Created</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aae64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>TASK_ASSIGNMENT.CREATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>File Assignment Updated</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eae64f891b2f681026a82131604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>TASK_ASSIGNMENT.UPDATED</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_trigger_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Webhook Deleted</label>
+            <language>en</language>
+            <name>sn_box_spoke_box_webhook_regist</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mayank.jain@snc</sys_created_by>
+            <sys_created_on>2021-04-14 20:03:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a2e64f891b2f681026a82131604bcbf7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mayank.jain@snc</sys_updated_by>
+            <sys_updated_on>2021-04-14 20:03:31</sys_updated_on>
+            <value>WEBHOOK.DELETED</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

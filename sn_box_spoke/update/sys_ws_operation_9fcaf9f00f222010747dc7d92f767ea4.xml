@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
-  <sys_ws_operation action="INSERT_OR_UPDATE">
-    <active>true</active>
-    <consumes>application/json,application/xml,text/xml</consumes>
-    <consumes_customized>false</consumes_customized>
-    <default_operation_uri/>
-    <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
-    <http_method>POST</http_method>
-    <name>Webhook Endpoint</name>
-    <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Webhook Endpoint</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 	
     var box_util = new BoxWebhookEventBuilder();
     var keys = box_util.getKeys(request.body.data.trigger);
@@ -39,28 +39,28 @@
         gs.error("Signatures not matching!");
 
 })(request, response);]]></operation_script>
-    <operation_uri>/api/sn_box_spoke/box_spoke_webhook_endpoints/webhook_endpoint</operation_uri>
-    <produces>application/json,application/xml,text/xml</produces>
-    <produces_customized>false</produces_customized>
-    <relative_path>/webhook_endpoint</relative_path>
-    <request_example/>
-    <requires_acl_authorization>true</requires_acl_authorization>
-    <requires_authentication>false</requires_authentication>
-    <requires_snc_internal_role>true</requires_snc_internal_role>
-    <short_description/>
-    <sys_class_name>sys_ws_operation</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2021-02-23 02:50:11</sys_created_on>
-    <sys_id>9fcaf9f00f222010747dc7d92f767ea4</sys_id>
-    <sys_mod_count>47</sys_mod_count>
-    <sys_name>Webhook Endpoint</sys_name>
-    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
-    <sys_policy>read</sys_policy>
-    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
-    <sys_update_name>sys_ws_operation_9fcaf9f00f222010747dc7d92f767ea4</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2021-03-12 10:18:39</sys_updated_on>
-    <web_service_definition display_value="Box Spoke Webhook Endpoints">866350700f222010747dc7d92f767e03</web_service_definition>
-    <web_service_version/>
-  </sys_ws_operation>
+        <operation_uri>/api/sn_box_spoke/box_spoke_webhook_endpoints/webhook_endpoint</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/webhook_endpoint</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-02-23 02:50:11</sys_created_on>
+        <sys_id>9fcaf9f00f222010747dc7d92f767ea4</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_name>Webhook Endpoint</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_ws_operation_9fcaf9f00f222010747dc7d92f767ea4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-12 10:18:39</sys_updated_on>
+        <web_service_definition display_value="Box Spoke Webhook Endpoints">866350700f222010747dc7d92f767e03</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
 </record_update>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias_templates">
-  <sys_alias_templates action="INSERT_OR_UPDATE">
-    <default_data_template>{&#13;
+    <sys_alias_templates action="INSERT_OR_UPDATE">
+        <default_data_template>{&#13;
     "credential": {&#13;
         "oauth_entity": {&#13;
             "oauth_entity_profile": [{&#13;
@@ -38,7 +38,7 @@
         "table": "http_connection"&#13;
     }&#13;
 }</default_data_template>
-    <dynamic_data_schema>&#13;
+        <dynamic_data_schema>&#13;
 &#13;
 {&#13;
     "connection_fields": [{&#13;
@@ -90,8 +90,8 @@
         }&#13;
     ]&#13;
 }</dynamic_data_schema>
-    <name>Box OAuth Template</name>
-    <on_edit_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+        <name>Box OAuth Template</name>
+        <on_edit_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
    // aliasId: sys_id of the alias record
    // connectionSysId: sys_id of the connection record created by using the default and dynamic data
    // jsonDefaultData (String): The default JSON template data from template table
@@ -102,7 +102,7 @@
    //      gs.info("dynamic connection url =  jsonDynamicParsed["connection.connection_url"]);
 })(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
 ]]></on_edit_script>
-    <post_process_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
+        <post_process_script><![CDATA[(function execute(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData) {
    // aliasId: sys_id of the alias record
    // connectionSysId: sys_id of the connection record created by using the default and dynamic data
    // jsonDefaultData (String): The default JSON template data from template table
@@ -113,17 +113,17 @@
    //      gs.info("dynamic connection url =  jsonDynamicParsed["connection.connection_url"]);
 })(aliasId, connectionSysId, jsonDefaultData, jsonDynamicData);
 ]]></post_process_script>
-    <sys_class_name>sys_alias_templates</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2021-03-02 10:41:24</sys_created_on>
-    <sys_id>f1992f030f262010747dc7d92f767eb5</sys_id>
-    <sys_mod_count>0</sys_mod_count>
-    <sys_name>Box OAuth Template</sys_name>
-    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
-    <sys_policy/>
-    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
-    <sys_update_name>sys_alias_templates_f1992f030f262010747dc7d92f767eb5</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2021-03-02 10:41:24</sys_updated_on>
-  </sys_alias_templates>
+        <sys_class_name>sys_alias_templates</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-02 10:41:24</sys_created_on>
+        <sys_id>f1992f030f262010747dc7d92f767eb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Box OAuth Template</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_alias_templates_f1992f030f262010747dc7d92f767eb5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-02 10:41:24</sys_updated_on>
+    </sys_alias_templates>
 </record_update>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
-  <sys_script_include action="INSERT_OR_UPDATE">
-    <access>package_private</access>
-    <active>true</active>
-    <api_name>sn_box_spoke.BoxWebhookEventBuilder</api_name>
-    <caller_access/>
-    <client_callable>false</client_callable>
-    <description>Script include to get payload for webhook.</description>
-    <name>BoxWebhookEventBuilder</name>
-    <script><![CDATA[var BoxWebhookEventBuilder = Class.create();
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_box_spoke.BoxWebhookEventBuilder</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Script include to get payload for webhook.</description>
+        <name>BoxWebhookEventBuilder</name>
+        <script><![CDATA[var BoxWebhookEventBuilder = Class.create();
 BoxWebhookEventBuilder.prototype = {
     initialize: function() {},
     matchEvent: function(trigger) {
@@ -35,17 +35,17 @@ BoxWebhookEventBuilder.prototype = {
     },
     type: 'BoxWebhookEventBuilder'
 };]]></script>
-    <sys_class_name>sys_script_include</sys_class_name>
-    <sys_created_by>admin</sys_created_by>
-    <sys_created_on>2021-03-02 18:49:25</sys_created_on>
-    <sys_id>3249d15f1b2a6010e9961fce034bcb7f</sys_id>
-    <sys_mod_count>11</sys_mod_count>
-    <sys_name>BoxWebhookEventBuilder</sys_name>
-    <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
-    <sys_policy>read</sys_policy>
-    <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
-    <sys_update_name>sys_script_include_3249d15f1b2a6010e9961fce034bcb7f</sys_update_name>
-    <sys_updated_by>admin</sys_updated_by>
-    <sys_updated_on>2021-03-12 10:14:56</sys_updated_on>
-  </sys_script_include>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-02 18:49:25</sys_created_on>
+        <sys_id>3249d15f1b2a6010e9961fce034bcb7f</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>BoxWebhookEventBuilder</sys_name>
+        <sys_package display_value="Box Spoke" source="sn_box_spoke">fdc25a6bdb1d9700868f5404ce961969</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Box Spoke">fdc25a6bdb1d9700868f5404ce961969</sys_scope>
+        <sys_update_name>sys_script_include_3249d15f1b2a6010e9961fce034bcb7f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-12 10:14:56</sys_updated_on>
+    </sys_script_include>
 </record_update>
