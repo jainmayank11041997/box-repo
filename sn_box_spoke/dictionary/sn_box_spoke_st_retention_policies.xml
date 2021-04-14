@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="read_only=true" scriptable_table="true" label="Retention Policies" max_length="40" name="sn_box_spoke_st_retention_policies" sizeclass="0" type="collection">
+        <element  attributes="edge_encryption_enabled=true" label="Type" max_length="40" name="u_type" type="string"/>
+        <element  attributes="edge_encryption_enabled=true" label="ID" max_length="40" name="u_id" type="string"/>
+        <element  attributes="edge_encryption_enabled=true" label="Policy Name" max_length="40" name="u_policy_name" type="string"/>
+        <element  attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="u_status" type="string"/>
+        <element  attributes="edge_encryption_enabled=true" label="Policy Name" max_length="40" name="u_policy_name" type="string"/>
+        <element  attributes="edge_encryption_enabled=true" label="Disposition Action" max_length="40" name="u_disposition_action" type="string"/>
+        <element  attributes="edge_encryption_enabled=true" label="Retention Length" max_length="40" name="u_retention_length" type="string"/>
+    </element>
+</database>

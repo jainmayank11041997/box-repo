@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+   <element label="Box Webhook Registry" max_length="40" name="sn_box_spoke_box_webhook_regist" sizeclass="1" type="collection">
+      <element label="Name" max_length="40" name="u_name" type="string" />
+      <element label="Description" max_length="40" name="u_description" type="string" />
+      <element label="Flow Name" max_length="40" name="u_flow_name" reference="sys_hub_flow" type="reference" mandatory="true" />
+      <element label="Primary Key" max_length="128" name="u_primary_key"  type="password2" mandatory="true" />
+      <element label="Secondary Key" max_length="128" name="u_secondary_key" type="password2" mandatory="true" />
+      <element label="Trigger Name" max_length="40" name="u_trigger_name" type="choice" mandatory="true">
+         <choice>
+            <element inactive_on_update="false" label="Uploaded" value="FILE.UPLOADED" />
+            <element inactive_on_update="false" label="Downloaded" value="FILE.DOWNLOADED" />
+            <element inactive_on_update="false" label="Previewed" value="FILE.PREVIEWED" />
+            <element inactive_on_update="false" label="File Deleted" value="FILE.DELETED" />
+            <element inactive_on_update="false" label="File Restored" value="FILE.RESTORED" />
+            <element inactive_on_update="false" label="File Copied" value="FILE.COPIED" />
+            <element inactive_on_update="false" label="File Moved" value="FILE.MOVED" />
+            <element inactive_on_update="false" label="File Locked" value="FILE.LOCKED" />
+            <element inactive_on_update="false" label="File Unlocked" value="FILE.UNLOCKED" />
+            <element inactive_on_update="false" label="File Renamed" value="FILE.RENAMED" />
+            <element inactive_on_update="false" label="Comment Created" value="COMMENT.CREATED" />
+            <element inactive_on_update="false" label="Comment Deleted" value="COMMENT.DELETED" />
+            <element inactive_on_update="false" label="Comment Updated" value="COMMENT.UPDATED" />
+            <element inactive_on_update="false" label="Task Assignment Created" value="TASK_ASSIGNMENT.CREATED" />
+            <element inactive_on_update="false" label="File Assignment Updated" value="TASK_ASSIGNMENT.UPDATED" />
+            <element inactive_on_update="false" label="Metadata Instance  Created" value="METADATA_INSTANCE.DELETED" />
+            <element inactive_on_update="false" label="Folder Renamed" value="FOLDER.RENAMED" />
+            <element inactive_on_update="false" label="Folder Restored" value="FOLDER.RESTORED" />
+            <element inactive_on_update="false" label="Folder Created" value="FOLDER.CREATED" />
+            <element inactive_on_update="false" label="Folder Deleted" value="FOLDER.DELETED" />
+            <element inactive_on_update="false" label="Folder Updated" value="FOLDER.UPDATED" />
+            <element inactive_on_update="false" label="Webhook Deleted" value="WEBHOOK.DELETED" />
+            <element inactive_on_update="false" label="Collaboration Created" value="COLLABORATION.CREATED" />
+            <element inactive_on_update="false" label="Collaboration Accepted" value="COLLABORATION.ACCEPTED" />
+            <element inactive_on_update="false" label="Collaboration Deleted" value="COLLABORATION.UPDATED" />
+            <element inactive_on_update="false" label="Collaboration Removed" value="COLLABORATION.REMOVED" />
+            <element inactive_on_update="false" label="Collaboration Rejected" value="COLLABORATION.REJECTED" />
+            <element inactive_on_update="false" label="Shared Link Deleted" value="SHARED_LINK.DELETED" />
+            <element inactive_on_update="false" label="Shared Link Removed" value="SHARED_LINK.CREATED" />
+            <element inactive_on_update="false" label="Shared Link Updated" value="SHARED_LINK.UPDATED" />
+            <element inactive_on_update="false" label="File Trashed" value="FILE.TRASHED" />
+         </choice>
+      </element>
+   </element>
+</database>
+
