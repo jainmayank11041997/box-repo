@@ -47,7 +47,7 @@
 &lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
 </description>
     <ih_action>true</ih_action>
-    <internal_name>look_up_metadata_instance_on_folder</internal_name>
+    <internal_name>look_up_metadata_instance_on_folder_by_folder_id</internal_name>
     <label_cache>[{"name":"{{action.folder_id}}","label":"action➛Folder ID","type":"action","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].folder_id}}","label":"step➛Pre Processing➛Folder ID","type":"step","ref":""},{"name":"{{step[a349abde-86b2-4b58-908c-41f2c1f42326].response_body}}","label":"step➛Look up Metadata Instance on Folder➛Response Body","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child0_child1}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child0_child1","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child0_child2}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child0_child2","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.ID}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata._id}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Type}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata._type}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.id}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.type}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child3}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child3","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child4}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child4","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child5}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child5","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Parent}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.parent}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Template}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.template}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Scope}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.scope}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].status}}","label":"step➛Post Processing &amp; Error Handling➛Status","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].error_message}}","label":"step➛Post Processing &amp; Error Handling➛Error Message","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].variable1}}","label":"step➛Post Processing &amp; Error Handling➛variable1","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].variable2}}","label":"step➛Post Processing &amp; Error Handling➛variable2","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].status}}","label":"step➛Post Processing &amp; Error Handling➛Status","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].error_message}}","label":"step➛Post Processing &amp; Error Handling➛Error Message","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.folder_metadata_child1}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child1","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.folder_metadata_child2}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child2","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.folder_metadata_child3}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child3","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.ID}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.id}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.Type}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.type}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.Parent}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.parent}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.folder_metadata_child4}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child4","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.Template}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.template}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.folder_metadata_child5}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child5","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.Scope}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[6c843bee-d0b0-4dbc-9e5c-35d1771fc01d].folder_metadata_5.scope}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[a349abde-86b2-4b58-908c-41f2c1f42326].api_version}}","label":"step➛Look up Metadata Instance on Folder➛API Version","type":"step","ref":""}]</label_cache>
     <latest_snapshot>78eaf1e00f032010747dc7d92f767ef0</latest_snapshot>
     <master_snapshot>4c40eb770fb42010747dc7d92f767ec9</master_snapshot>
@@ -927,7 +927,7 @@
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Look up Metadata Instance on Folder</label>
+    <label>Look up Metadata Instance on Folder By Folder ID</label>
     <order>2</order>
     <outputs/>
     <section/>
@@ -1150,7 +1150,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Look up Metadata Instance on Folder">c21bb9ff0f342010747dc7d92f767e3d</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">c21bb9ff0f342010747dc7d92f767e3d</model>
     <model_id>c21bb9ff0f342010747dc7d92f767e3d</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_c21bb9ff0f342010747dc7d92f767e3d</name>
@@ -1231,7 +1231,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on Folder">c21bb9ff0f342010747dc7d92f767e3d</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">c21bb9ff0f342010747dc7d92f767e3d</model>
     <model_id>c21bb9ff0f342010747dc7d92f767e3d</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_c21bb9ff0f342010747dc7d92f767e3d</name>
@@ -2381,7 +2381,7 @@
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Look up Metadata Instance on Folder</label>
+    <label>Look up Metadata Instance on Folder By Folder ID</label>
     <order>2</order>
     <outputs/>
     <section/>
@@ -2604,7 +2604,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Look up Metadata Instance on Folder">c21bb9ff0f342010747dc7d92f767e3d</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">c21bb9ff0f342010747dc7d92f767e3d</model>
     <model_id>c21bb9ff0f342010747dc7d92f767e3d</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_c21bb9ff0f342010747dc7d92f767e3d</name>
@@ -2685,7 +2685,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on Folder">c21bb9ff0f342010747dc7d92f767e3d</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">c21bb9ff0f342010747dc7d92f767e3d</model>
     <model_id>c21bb9ff0f342010747dc7d92f767e3d</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_c21bb9ff0f342010747dc7d92f767e3d</name>
@@ -2888,10 +2888,10 @@
     <copied_from/>
     <copied_from_name/>
     <description/>
-    <internal_name>look_up_metadata_instance_on_folder</internal_name>
+    <internal_name>look_up_metadata_instance_on_folder_by_folder_id</internal_name>
     <label_cache>[{"name":"{{action.folder_id}}","label":"action➛Folder ID","type":"action","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].folder_id}}","label":"step➛Pre Processing➛Folder ID","type":"step","ref":""},{"name":"{{step[a349abde-86b2-4b58-908c-41f2c1f42326].response_body}}","label":"step➛Look up Metadata Instance on Folder➛Response Body","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child0_child1}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child0_child1","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child0_child2}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child0_child2","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.ID}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata._id}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Type}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata._type}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.id}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.type}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child3}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child3","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child4}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child4","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child5}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Folder Metadata_child5","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Parent}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.parent}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Template}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.template}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Scope}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.scope}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].status}}","label":"step➛Post Processing &amp; Error Handling➛Status","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].error_message}}","label":"step➛Post Processing &amp; Error Handling➛Error Message","type":"step","ref":""}]</label_cache>
     <master>true</master>
-    <name>Look up Metadata Instance on Folder</name>
+    <name>Look up Metadata Instance on Folder By Folder ID</name>
     <natlang/>
     <outputs/>
     <outputs/>
@@ -2993,7 +2993,7 @@
   </sys_element_mapping>
   <sys_hub_step_instance action="delete_multiple" query="action=4c40eb770fb42010747dc7d92f767ec9^sys_idNOT IN4c40eb770fb42010747dc7d92f767ed1,8040eb770fb42010747dc7d92f767ee7,dd4cfd060f612010747dc7d92f767ee2"/>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</action>
+    <action display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</action>
     <cid>f7e5ec12-e6bd-4dc3-87fb-e18308d381f2</cid>
     <extended_inputs/>
     <extended_inputs/>
@@ -3273,14 +3273,14 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</action>
+    <action display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</action>
     <cid>a349abde-86b2-4b58-908c-41f2c1f42326</cid>
     <extended_inputs/>
     <extended_outputs/>
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Look up Metadata Instance on Folder</label>
+    <label>Look up Metadata Instance on Folder By Folder ID</label>
     <order>2</order>
     <outputs/>
     <section/>
@@ -3503,7 +3503,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Look up Metadata Instance on Folder">8040eb770fb42010747dc7d92f767ee7</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">8040eb770fb42010747dc7d92f767ee7</model>
     <model_id>8040eb770fb42010747dc7d92f767ee7</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_8040eb770fb42010747dc7d92f767ee7</name>
@@ -3584,7 +3584,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on Folder">8040eb770fb42010747dc7d92f767ee7</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">8040eb770fb42010747dc7d92f767ee7</model>
     <model_id>8040eb770fb42010747dc7d92f767ee7</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_8040eb770fb42010747dc7d92f767ee7</name>
@@ -3627,7 +3627,7 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</action>
+    <action display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</action>
     <cid>6c843bee-d0b0-4dbc-9e5c-35d1771fc01d</cid>
     <extended_inputs/>
     <extended_inputs/>
@@ -4153,7 +4153,7 @@
     <label>Folder ID</label>
     <mandatory>true</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</model>
     <model_id>4c40eb770fb42010747dc7d92f767ec9</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_input_4c40eb770fb42010747dc7d92f767ec9</name>
@@ -4237,7 +4237,7 @@
     <label>Folder Metadata</label>
     <mandatory>false</mandatory>
     <max_length>65000</max_length>
-    <model display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</model>
     <model_id>4c40eb770fb42010747dc7d92f767ec9</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_4c40eb770fb42010747dc7d92f767ec9</name>
@@ -4320,7 +4320,7 @@
     <label>Status</label>
     <mandatory>false</mandatory>
     <max_length>32</max_length>
-    <model display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</model>
     <model_id>4c40eb770fb42010747dc7d92f767ec9</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_4c40eb770fb42010747dc7d92f767ec9</name>
@@ -4403,7 +4403,7 @@
     <label>Error Message</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</model>
     <model_id>4c40eb770fb42010747dc7d92f767ec9</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_4c40eb770fb42010747dc7d92f767ec9</name>
@@ -4447,7 +4447,7 @@
   </sys_hub_action_output>
   <sys_hub_step_instance action="delete_multiple" query="action=4c40eb770fb42010747dc7d92f767ec9^sys_idNOT IN4c40eb770fb42010747dc7d92f767ed1,8040eb770fb42010747dc7d92f767ee7,dd4cfd060f612010747dc7d92f767ee2"/>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</action>
+    <action display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</action>
     <cid>f7e5ec12-e6bd-4dc3-87fb-e18308d381f2</cid>
     <extended_inputs/>
     <extended_inputs/>
@@ -4727,14 +4727,14 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</action>
+    <action display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</action>
     <cid>a349abde-86b2-4b58-908c-41f2c1f42326</cid>
     <extended_inputs/>
     <extended_outputs/>
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Look up Metadata Instance on Folder</label>
+    <label>Look up Metadata Instance on Folder By Folder ID</label>
     <order>2</order>
     <outputs/>
     <section/>
@@ -4957,7 +4957,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Look up Metadata Instance on Folder">8040eb770fb42010747dc7d92f767ee7</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">8040eb770fb42010747dc7d92f767ee7</model>
     <model_id>8040eb770fb42010747dc7d92f767ee7</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_8040eb770fb42010747dc7d92f767ee7</name>
@@ -5038,7 +5038,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on Folder">8040eb770fb42010747dc7d92f767ee7</model>
+    <model display_value="Look up Metadata Instance on Folder By Folder ID">8040eb770fb42010747dc7d92f767ee7</model>
     <model_id>8040eb770fb42010747dc7d92f767ee7</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_8040eb770fb42010747dc7d92f767ee7</name>
@@ -5081,7 +5081,7 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Look up Metadata Instance on Folder">4c40eb770fb42010747dc7d92f767ec9</action>
+    <action display_value="Look up Metadata Instance on Folder By Folder ID">4c40eb770fb42010747dc7d92f767ec9</action>
     <cid>6c843bee-d0b0-4dbc-9e5c-35d1771fc01d</cid>
     <extended_inputs/>
     <extended_inputs/>

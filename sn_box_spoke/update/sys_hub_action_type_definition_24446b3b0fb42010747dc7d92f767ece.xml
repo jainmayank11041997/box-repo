@@ -50,7 +50,7 @@
 &lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
 </description>
     <ih_action>true</ih_action>
-    <internal_name>get_metadata_instance_on_file</internal_name>
+    <internal_name>look_up_metadata_instance_on_file_by_scope_and_template_key</internal_name>
     <label_cache>[{"name":"{{action.folder_id}}","label":"action➛Folder ID","type":"action","ref":""},{"name":"{{action.scope}}","label":"action➛Scope","type":"action","ref":""},{"name":"{{action.template_key}}","label":"action➛Template Key","type":"action","ref":""},{"name":"{{action.file_id}}","label":"action➛File ID","type":"action","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].folder_id}}","label":"step➛Pre Processing➛File ID","type":"step","ref":""},{"name":"{{step[a349abde-86b2-4b58-908c-41f2c1f42326].response_body}}","label":"step➛Look up Metadata Instance on File➛Response Body","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child0_child1}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child0_child1","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child0_child2}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child0_child2","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.ID}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata._id}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata._type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.id}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child3}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child3","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child4}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child4","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child5}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child5","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Parent}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.parent}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Template}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.template}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Scope}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.scope}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].status}}","label":"step➛Post Processing &amp; Error Handling➛Status","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].error_message}}","label":"step➛Post Processing &amp; Error Handling➛Error Message","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].variable2}}","label":"step➛Pre Processing➛variable2","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].scope}}","label":"step➛Pre Processing➛Scope","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].template_key}}","label":"step➛Pre Processing➛Template Key","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child1}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child1","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child2}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child2","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child3}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child3","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.id}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Parent}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.parent}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child4}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child4","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Template}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.template}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child6}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child6","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Scope}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.scope}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Versio}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Versio","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Version}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Version","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.version}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Version","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.folder_metadata_child1}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child1","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.folder_metadata_child2}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child2","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.folder_metadata_child3}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child3","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.ID}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.id}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.Version}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Version","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.version}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Version","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.Template}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.template}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.folder_metadata_child4}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child4","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.Parent}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.parent}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.folder_metadata_child5}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Folder Metadata_child5","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.Scope}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata_instance_on_file.scope}}","label":"step➛Post Processing &amp; Error Handling➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[a349abde-86b2-4b58-908c-41f2c1f42326].api_version}}","label":"step➛Look up Metadata Instance on File➛API Version","type":"step","ref":""}]</label_cache>
     <latest_snapshot>985c71640f032010747dc7d92f767e25</latest_snapshot>
     <master_snapshot>ca0723fb0fb42010747dc7d92f767e22</master_snapshot>
@@ -793,7 +793,7 @@
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Look up Metadata Instance on File</label>
+    <label>Look up Metadata Instance on File by Scope and Template Key</label>
     <order>2</order>
     <outputs/>
     <section/>
@@ -1016,7 +1016,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Look up Metadata Instance on File">b844ab3b0fb42010747dc7d92f767e10</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">b844ab3b0fb42010747dc7d92f767e10</model>
     <model_id>b844ab3b0fb42010747dc7d92f767e10</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_b844ab3b0fb42010747dc7d92f767e10</name>
@@ -1097,7 +1097,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on File">b844ab3b0fb42010747dc7d92f767e10</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">b844ab3b0fb42010747dc7d92f767e10</model>
     <model_id>b844ab3b0fb42010747dc7d92f767e10</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_b844ab3b0fb42010747dc7d92f767e10</name>
@@ -2741,7 +2741,7 @@
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Look up Metadata Instance on File</label>
+    <label>Look up Metadata Instance on File by Scope and Template Key</label>
     <order>2</order>
     <outputs/>
     <section/>
@@ -2964,7 +2964,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Look up Metadata Instance on File">b844ab3b0fb42010747dc7d92f767e10</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">b844ab3b0fb42010747dc7d92f767e10</model>
     <model_id>b844ab3b0fb42010747dc7d92f767e10</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_b844ab3b0fb42010747dc7d92f767e10</name>
@@ -3045,7 +3045,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on File">b844ab3b0fb42010747dc7d92f767e10</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">b844ab3b0fb42010747dc7d92f767e10</model>
     <model_id>b844ab3b0fb42010747dc7d92f767e10</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_b844ab3b0fb42010747dc7d92f767e10</name>
@@ -3790,10 +3790,10 @@
 
 &lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
 </description>
-    <internal_name>get_metadata_instance_on_file</internal_name>
+    <internal_name>look_up_metadata_instance_on_file_by_scope_and_template_key</internal_name>
     <label_cache>[{"name":"{{action.folder_id}}","label":"action➛Folder ID","type":"action","ref":""},{"name":"{{action.scope}}","label":"action➛Scope","type":"action","ref":""},{"name":"{{action.template_key}}","label":"action➛Template Key","type":"action","ref":""},{"name":"{{action.file_id}}","label":"action➛File ID","type":"action","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].folder_id}}","label":"step➛Pre Processing➛File ID","type":"step","ref":""},{"name":"{{step[a349abde-86b2-4b58-908c-41f2c1f42326].response_body}}","label":"step➛Look up Metadata Instance on File➛Response Body","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].variable}}","label":"step➛Post Processing &amp; Error Handling➛variable","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child0_child1}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child0_child1","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child0_child2}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child0_child2","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.ID}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata._id}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata._type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.id}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child3}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child3","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child4}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child4","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.folder_metadata_child5}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Folder Metadata_child5","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Parent}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.parent}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Template}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.template}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.Scope}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Folder_Metadata.scope}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].status}}","label":"step➛Post Processing &amp; Error Handling➛Status","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].error_message}}","label":"step➛Post Processing &amp; Error Handling➛Error Message","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].variable2}}","label":"step➛Pre Processing➛variable2","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].scope}}","label":"step➛Pre Processing➛Scope","type":"step","ref":""},{"name":"{{step[f7e5ec12-e6bd-4dc3-87fb-e18308d381f2].template_key}}","label":"step➛Pre Processing➛Template Key","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child1}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child1","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child2}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child2","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child3}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child3","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.id}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛ID","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.type}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Type","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Parent}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.parent}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Parent","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child4}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child4","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Template}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.template}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Template","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.folder_metadata_child6}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Folder Metadata_child6","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Scope}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.scope}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Scope","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Versio}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Versio","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.Version}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Version","type":"step","ref":""},{"name":"{{step[f50ba717-cca9-40fd-80ec-fe09882fcc6a].folder_metadata.version}}","label":"step➛Post Processing &amp; Error Handling➛File Metadata➛Version","type":"step","ref":""}]</label_cache>
     <master>true</master>
-    <name>Get Metadata Instance on File</name>
+    <name>Look up Metadata Instance on File by Scope and Template Key</name>
     <natlang/>
     <outputs/>
     <outputs/>
@@ -3883,7 +3883,7 @@
   </sys_element_mapping>
   <sys_hub_step_instance action="delete_multiple" query="action=ca0723fb0fb42010747dc7d92f767e22^sys_idNOT IN420723fb0fb42010747dc7d92f767e36,820723fb0fb42010747dc7d92f767e79,8e0723fb0fb42010747dc7d92f767e61"/>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</action>
+    <action display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</action>
     <cid>f7e5ec12-e6bd-4dc3-87fb-e18308d381f2</cid>
     <extended_inputs/>
     <extended_inputs/>
@@ -4513,7 +4513,7 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</action>
+    <action display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</action>
     <cid>f50ba717-cca9-40fd-80ec-fe09882fcc6a</cid>
     <extended_inputs/>
     <extended_inputs/>
@@ -4970,14 +4970,14 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</action>
+    <action display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</action>
     <cid>a349abde-86b2-4b58-908c-41f2c1f42326</cid>
     <extended_inputs/>
     <extended_outputs/>
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Look up Metadata Instance on File</label>
+    <label>Look up Metadata Instance on File by Scope and Template Key</label>
     <order>2</order>
     <outputs/>
     <section/>
@@ -5200,7 +5200,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Look up Metadata Instance on File">8e0723fb0fb42010747dc7d92f767e61</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">8e0723fb0fb42010747dc7d92f767e61</model>
     <model_id>8e0723fb0fb42010747dc7d92f767e61</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_8e0723fb0fb42010747dc7d92f767e61</name>
@@ -5281,7 +5281,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on File">8e0723fb0fb42010747dc7d92f767e61</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">8e0723fb0fb42010747dc7d92f767e61</model>
     <model_id>8e0723fb0fb42010747dc7d92f767e61</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_8e0723fb0fb42010747dc7d92f767e61</name>
@@ -5363,7 +5363,7 @@
     <label>File ID</label>
     <mandatory>true</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</model>
     <model_id>ca0723fb0fb42010747dc7d92f767e22</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_input_ca0723fb0fb42010747dc7d92f767e22</name>
@@ -5444,7 +5444,7 @@
     <label>Scope</label>
     <mandatory>true</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</model>
     <model_id>ca0723fb0fb42010747dc7d92f767e22</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_input_ca0723fb0fb42010747dc7d92f767e22</name>
@@ -5525,7 +5525,7 @@
     <label>Template Key</label>
     <mandatory>true</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</model>
     <model_id>ca0723fb0fb42010747dc7d92f767e22</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_input_ca0723fb0fb42010747dc7d92f767e22</name>
@@ -5609,7 +5609,7 @@
     <label>Status</label>
     <mandatory>false</mandatory>
     <max_length>32</max_length>
-    <model display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</model>
     <model_id>ca0723fb0fb42010747dc7d92f767e22</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_ca0723fb0fb42010747dc7d92f767e22</name>
@@ -5692,7 +5692,7 @@
     <label>Error Message</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</model>
     <model_id>ca0723fb0fb42010747dc7d92f767e22</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_ca0723fb0fb42010747dc7d92f767e22</name>
@@ -5775,7 +5775,7 @@
     <label>Folder Metadata</label>
     <mandatory>false</mandatory>
     <max_length>65000</max_length>
-    <model display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</model>
     <model_id>ca0723fb0fb42010747dc7d92f767e22</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_ca0723fb0fb42010747dc7d92f767e22</name>
@@ -5819,7 +5819,7 @@
   </sys_hub_action_output>
   <sys_hub_step_instance action="delete_multiple" query="action=ca0723fb0fb42010747dc7d92f767e22^sys_idNOT IN420723fb0fb42010747dc7d92f767e36,820723fb0fb42010747dc7d92f767e79,8e0723fb0fb42010747dc7d92f767e61"/>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</action>
+    <action display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</action>
     <cid>f7e5ec12-e6bd-4dc3-87fb-e18308d381f2</cid>
     <extended_inputs/>
     <extended_inputs/>
@@ -6449,7 +6449,7 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</action>
+    <action display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</action>
     <cid>f50ba717-cca9-40fd-80ec-fe09882fcc6a</cid>
     <extended_inputs/>
     <extended_inputs/>
@@ -6906,14 +6906,14 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Get Metadata Instance on File">ca0723fb0fb42010747dc7d92f767e22</action>
+    <action display_value="Look up Metadata Instance on File by Scope and Template Key">ca0723fb0fb42010747dc7d92f767e22</action>
     <cid>a349abde-86b2-4b58-908c-41f2c1f42326</cid>
     <extended_inputs/>
     <extended_outputs/>
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Look up Metadata Instance on File</label>
+    <label>Look up Metadata Instance on File by Scope and Template Key</label>
     <order>2</order>
     <outputs/>
     <section/>
@@ -7136,7 +7136,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Look up Metadata Instance on File">8e0723fb0fb42010747dc7d92f767e61</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">8e0723fb0fb42010747dc7d92f767e61</model>
     <model_id>8e0723fb0fb42010747dc7d92f767e61</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_8e0723fb0fb42010747dc7d92f767e61</name>
@@ -7217,7 +7217,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Look up Metadata Instance on File">8e0723fb0fb42010747dc7d92f767e61</model>
+    <model display_value="Look up Metadata Instance on File by Scope and Template Key">8e0723fb0fb42010747dc7d92f767e61</model>
     <model_id>8e0723fb0fb42010747dc7d92f767e61</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_8e0723fb0fb42010747dc7d92f767e61</name>

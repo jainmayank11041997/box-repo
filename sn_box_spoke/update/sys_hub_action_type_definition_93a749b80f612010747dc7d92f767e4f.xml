@@ -6,7 +6,7 @@
     <active>true</active>
     <annotation/>
     <callable_by_client_api>false</callable_by_client_api>
-    <category display_value="Legal Hold Management">097e17220f412010747dc7d92f767ed8</category>
+    <category display_value="Retention Policy Management">265d2bbf0fb42010747dc7d92f767e34</category>
     <copied_from>d12598c30f012010747dc7d92f767efc</copied_from>
     <copied_from_name>Look up Legal Hold Policy Assign</copied_from_name>
     <description>&lt;p&gt;Retrieves all of the retention policies for an enterprise.&lt;/p&gt;
@@ -46,7 +46,7 @@
 &lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
 </description>
     <ih_action>true</ih_action>
-    <internal_name>look_up_retention_policies</internal_name>
+    <internal_name>look_up_retention_policies_stream</internal_name>
     <label_cache>[{"name":"{{action.policy_id}}","label":"action➛Retention Policy ID","type":"action","ref":""},{"name":"{{step[eea09995-2f58-4bfa-973e-c6675122a1a1].marker}}","label":"step➛Pagination Setup step➛marker","type":"step","ref":""},{"name":"{{step[98ec288d-a2e6-426c-b35f-8212adecb39f].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[98ec288d-a2e6-426c-b35f-8212adecb39f].marker}}","label":"step➛Script step➛Marker","type":"step","ref":""},{"name":"{{step[55579b89-c615-47ed-9460-d989ed1de5f0].api_version}}","label":"step➛Look up Legal Hold Policy Assignments➛API Version","type":"step","ref":""}]</label_cache>
     <latest_snapshot>b66db9a40f032010747dc7d92f767eac</latest_snapshot>
     <master_snapshot>22bac17c0f612010747dc7d92f767e97</master_snapshot>
@@ -3970,7 +3970,7 @@
 
 &lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
 </description>
-    <internal_name>look_up_retention_policies</internal_name>
+    <internal_name>look_up_retention_policies_stream</internal_name>
     <label_cache>[{"name":"{{action.policy_id}}","label":"action➛Retention Policy ID","type":"action","ref":""},{"name":"{{step[eea09995-2f58-4bfa-973e-c6675122a1a1].marker}}","label":"step➛Pagination Setup step➛marker","type":"step","ref":""},{"name":"{{step[98ec288d-a2e6-426c-b35f-8212adecb39f].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[98ec288d-a2e6-426c-b35f-8212adecb39f].marker}}","label":"step➛Script step➛Marker","type":"step","ref":""}]</label_cache>
     <master>true</master>
     <name>Look up Retention Policies Stream&#8232;</name>

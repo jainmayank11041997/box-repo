@@ -59,7 +59,7 @@
 &lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: Requires a subscription for production use. &lt;a target="_blank" href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information"&gt;Read More&lt;/a&gt;.&lt;/p&gt;
 </description>
     <ih_action>true</ih_action>
-    <internal_name>search_for_content</internal_name>
+    <internal_name>search_content_stream</internal_name>
     <label_cache>[{"name":"{{action.query}}","label":"action➛Query","type":"action","ref":""},{"name":"{{action.user_id}}","label":"action➛User ID","type":"action","ref":""},{"name":"{{action.direction}}","label":"action➛Direction","type":"action","ref":""},{"name":"{{action.content_types}}","label":"action➛Content Types","type":"action","ref":""},{"name":"{{action.scope}}","label":"action➛Scope","type":"action","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].variable}}","label":"step➛Pre Processing➛variable","type":"step","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].offset}}","label":"step➛Pre Processing➛Offset","type":"step","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].off_set}}","label":"step➛Pre Processing➛Off Set","type":"step","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].off_set.ntOff_Set_child0}}","label":"step➛Pre Processing➛Off Set➛ntOff Set_child0","type":"step","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].test}}","label":"step➛Pre Processing➛Test","type":"step","ref":""},{"name":"{{step[935b3ad6-3d6b-4f20-bb6e-2a311291aaed].getNextPage}}","label":"step➛Pagination Setup step➛getNextPage","type":"step","ref":""},{"name":"{{step[935b3ad6-3d6b-4f20-bb6e-2a311291aaed].limit}}","label":"step➛Pagination Setup step➛limit","type":"step","ref":""},{"name":"{{step[935b3ad6-3d6b-4f20-bb6e-2a311291aaed].Offset}}","label":"step➛Pagination Setup step➛Offset","type":"step","ref":""},{"name":"{{step[cdb64da7-e9f2-499b-ad26-e0ba92ce9bf4].api_version}}","label":"step➛Search for Content➛API Version","type":"step","ref":""}]</label_cache>
     <latest_snapshot>e2de06680f032010747dc7d92f767e2b</latest_snapshot>
     <master_snapshot>a717f8b70fb02010747dc7d92f767ea8</master_snapshot>
@@ -1163,7 +1163,7 @@
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Search for Content</label>
+    <label>Search Content Stream</label>
     <order>5</order>
     <outputs/>
     <section>DATASTREAM_REQUEST</section>
@@ -1426,7 +1426,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Search for Content">bb8c2c7f0f702010747dc7d92f767ed7</model>
+    <model display_value="Search Content Stream">bb8c2c7f0f702010747dc7d92f767ed7</model>
     <model_id>bb8c2c7f0f702010747dc7d92f767ed7</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_bb8c2c7f0f702010747dc7d92f767ed7</name>
@@ -1507,7 +1507,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">bb8c2c7f0f702010747dc7d92f767ed7</model>
+    <model display_value="Search Content Stream">bb8c2c7f0f702010747dc7d92f767ed7</model>
     <model_id>bb8c2c7f0f702010747dc7d92f767ed7</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_bb8c2c7f0f702010747dc7d92f767ed7</name>
@@ -4010,7 +4010,7 @@
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Search for Content</label>
+    <label>Search Content Stream</label>
     <order>5</order>
     <outputs/>
     <section>DATASTREAM_REQUEST</section>
@@ -4273,7 +4273,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Search for Content">bb8c2c7f0f702010747dc7d92f767ed7</model>
+    <model display_value="Search Content Stream">bb8c2c7f0f702010747dc7d92f767ed7</model>
     <model_id>bb8c2c7f0f702010747dc7d92f767ed7</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_bb8c2c7f0f702010747dc7d92f767ed7</name>
@@ -4354,7 +4354,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">bb8c2c7f0f702010747dc7d92f767ed7</model>
+    <model display_value="Search Content Stream">bb8c2c7f0f702010747dc7d92f767ed7</model>
     <model_id>bb8c2c7f0f702010747dc7d92f767ed7</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_bb8c2c7f0f702010747dc7d92f767ed7</name>
@@ -5101,10 +5101,10 @@
     <copied_from/>
     <copied_from_name/>
     <description/>
-    <internal_name>search_for_content</internal_name>
+    <internal_name>search_content_stream</internal_name>
     <label_cache>[{"name":"{{action.query}}","label":"action➛Query","type":"action","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].offset}}","label":"step➛Script step➛Offset","type":"step","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].off_set}}","label":"step➛Script step➛Off Set","type":"step","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].off_set.ntOff_Set_child0}}","label":"step➛Script step➛Off Set➛ntOff Set_child0","type":"step","ref":""},{"name":"{{step[39cfaa3e-4c0b-403a-8840-7d3bab0c8e78].test}}","label":"step➛Script step➛Test","type":"step","ref":""},{"name":"{{step[935b3ad6-3d6b-4f20-bb6e-2a311291aaed].getNextPage}}","label":"step➛Pagination Setup step➛getNextPage","type":"step","ref":""},{"name":"{{step[935b3ad6-3d6b-4f20-bb6e-2a311291aaed].limit}}","label":"step➛Pagination Setup step➛limit","type":"step","ref":""},{"name":"{{step[935b3ad6-3d6b-4f20-bb6e-2a311291aaed].Offset}}","label":"step➛Pagination Setup step➛Offset","type":"step","ref":""}]</label_cache>
     <master>true</master>
-    <name>Search for Content</name>
+    <name>Search Content Stream</name>
     <natlang/>
     <outputs/>
     <outputs/>
@@ -5322,7 +5322,7 @@
   </sys_element_mapping>
   <sys_hub_step_instance action="delete_multiple" query="action=a717f8b70fb02010747dc7d92f767ea8^sys_idNOT IN40273cb70fb02010747dc7d92f767e28,7f17f8b70fb02010747dc7d92f767eba,bb17f8b70fb02010747dc7d92f767eb4,bf173cb70fb02010747dc7d92f767e0a,c8273cb70fb02010747dc7d92f767e22,cc273cb70fb02010747dc7d92f767e2d,e717f8b70fb02010747dc7d92f767eb0,f717f8b70fb02010747dc7d92f767ed1"/>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>3592615b-47e7-4b16-952b-7ed367f6c0e5</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -5409,7 +5409,7 @@
     <value>{{step[cdb64da7-e9f2-499b-ad26-e0ba92ce9bf4].response_stream}}</value>
   </sys_element_mapping>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>935b3ad6-3d6b-4f20-bb6e-2a311291aaed</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -5789,7 +5789,7 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>4d70f427-2121-455a-a081-736ede99c5f8</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -5852,14 +5852,14 @@
     <variable display_value="">d61d64d677032300efb691572b10611a</variable>
   </sys_variable_value>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>cdb64da7-e9f2-499b-ad26-e0ba92ce9bf4</cid>
     <extended_inputs/>
     <extended_outputs/>
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Search for Content</label>
+    <label>Search Content Stream</label>
     <order>5</order>
     <outputs/>
     <section>DATASTREAM_REQUEST</section>
@@ -6122,7 +6122,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">bf173cb70fb02010747dc7d92f767e0a</model>
+    <model display_value="Search Content Stream">bf173cb70fb02010747dc7d92f767e0a</model>
     <model_id>bf173cb70fb02010747dc7d92f767e0a</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_bf173cb70fb02010747dc7d92f767e0a</name>
@@ -6203,7 +6203,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Search for Content">bf173cb70fb02010747dc7d92f767e0a</model>
+    <model display_value="Search Content Stream">bf173cb70fb02010747dc7d92f767e0a</model>
     <model_id>bf173cb70fb02010747dc7d92f767e0a</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_bf173cb70fb02010747dc7d92f767e0a</name>
@@ -6246,7 +6246,7 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>1881c12b-c03a-47dd-aa58-f82dbc0dfc85</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -6295,7 +6295,7 @@
     <variable display_value="">ae4eacd677032300efb691572b106156</variable>
   </sys_variable_value>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>25f56616-2236-41ab-ac93-14e61cfa570d</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -6369,7 +6369,7 @@
     <value>{{step[3592615b-47e7-4b16-952b-7ed367f6c0e5].split_stream}}</value>
   </sys_element_mapping>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>fcdce517-2367-44a1-9425-cbab997cf577</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -6390,7 +6390,7 @@
   </sys_hub_step_instance>
   <sys_variable_value action="delete_multiple" query="document_key=e717f8b70fb02010747dc7d92f767eb0"/>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>39cfaa3e-4c0b-403a-8840-7d3bab0c8e78</cid>
     <extended_inputs/>
     <extended_inputs/>
@@ -6804,7 +6804,7 @@
     <label>Query</label>
     <mandatory>true</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_input_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -6885,7 +6885,7 @@
     <label>User ID</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_input_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -6966,7 +6966,7 @@
     <label>Scope</label>
     <mandatory>false</mandatory>
     <max_length>32</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_input_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7047,7 +7047,7 @@
     <label>Direction</label>
     <mandatory>false</mandatory>
     <max_length>32</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_input_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7128,7 +7128,7 @@
     <label>Content Types</label>
     <mandatory>false</mandatory>
     <max_length>32</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_input_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7212,7 +7212,7 @@
     <label>response_headers</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7295,7 +7295,7 @@
     <label>count</label>
     <mandatory>false</mandatory>
     <max_length>40</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7378,7 +7378,7 @@
     <label>Content</label>
     <mandatory>false</mandatory>
     <max_length>65000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7461,7 +7461,7 @@
     <label>ds_parsed_stream</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7544,7 +7544,7 @@
     <label>ds_output_page_variables</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7627,7 +7627,7 @@
     <label>Page Count</label>
     <mandatory>false</mandatory>
     <max_length>40</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7710,7 +7710,7 @@
     <label>error_code</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7793,7 +7793,7 @@
     <label>status_code</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7876,7 +7876,7 @@
     <label>item</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -7959,7 +7959,7 @@
     <label>ds_count</label>
     <mandatory>false</mandatory>
     <max_length>40</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -8042,7 +8042,7 @@
     <label>Item Count</label>
     <mandatory>false</mandatory>
     <max_length>40</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -8125,7 +8125,7 @@
     <label>error_message</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</model>
+    <model display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</model>
     <model_id>a717f8b70fb02010747dc7d92f767ea8</model_id>
     <model_table>sys_hub_action_type_snapshot</model_table>
     <name>var__m_sys_hub_action_output_a717f8b70fb02010747dc7d92f767ea8</name>
@@ -8169,7 +8169,7 @@
   </sys_hub_action_output>
   <sys_hub_step_instance action="delete_multiple" query="action=a717f8b70fb02010747dc7d92f767ea8^sys_idNOT IN40273cb70fb02010747dc7d92f767e28,7f17f8b70fb02010747dc7d92f767eba,bb17f8b70fb02010747dc7d92f767eb4,bf173cb70fb02010747dc7d92f767e0a,c8273cb70fb02010747dc7d92f767e22,cc273cb70fb02010747dc7d92f767e2d,e717f8b70fb02010747dc7d92f767eb0,f717f8b70fb02010747dc7d92f767ed1"/>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>3592615b-47e7-4b16-952b-7ed367f6c0e5</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -8256,7 +8256,7 @@
     <value>{{step[cdb64da7-e9f2-499b-ad26-e0ba92ce9bf4].response_stream}}</value>
   </sys_element_mapping>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>935b3ad6-3d6b-4f20-bb6e-2a311291aaed</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -8636,7 +8636,7 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>4d70f427-2121-455a-a081-736ede99c5f8</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -8699,14 +8699,14 @@
     <variable display_value="">d61d64d677032300efb691572b10611a</variable>
   </sys_variable_value>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>cdb64da7-e9f2-499b-ad26-e0ba92ce9bf4</cid>
     <extended_inputs/>
     <extended_outputs/>
     <icon/>
     <inputs/>
     <inputs/>
-    <label>Search for Content</label>
+    <label>Search Content Stream</label>
     <order>5</order>
     <outputs/>
     <section>DATASTREAM_REQUEST</section>
@@ -8969,7 +8969,7 @@
     <label>API Version</label>
     <mandatory>false</mandatory>
     <max_length>8000</max_length>
-    <model display_value="Search for Content">bf173cb70fb02010747dc7d92f767e0a</model>
+    <model display_value="Search Content Stream">bf173cb70fb02010747dc7d92f767e0a</model>
     <model_id>bf173cb70fb02010747dc7d92f767e0a</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_bf173cb70fb02010747dc7d92f767e0a</name>
@@ -9050,7 +9050,7 @@
     <label>Credential Value</label>
     <mandatory>false</mandatory>
     <max_length>255</max_length>
-    <model display_value="Search for Content">bf173cb70fb02010747dc7d92f767e0a</model>
+    <model display_value="Search Content Stream">bf173cb70fb02010747dc7d92f767e0a</model>
     <model_id>bf173cb70fb02010747dc7d92f767e0a</model_id>
     <model_table>sys_hub_step_instance</model_table>
     <name>var__m_sys_hub_step_ext_output_bf173cb70fb02010747dc7d92f767e0a</name>
@@ -9093,7 +9093,7 @@
     <xml_view>false</xml_view>
   </sys_hub_step_ext_output>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>1881c12b-c03a-47dd-aa58-f82dbc0dfc85</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -9142,7 +9142,7 @@
     <variable display_value="">ae4eacd677032300efb691572b106156</variable>
   </sys_variable_value>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>25f56616-2236-41ab-ac93-14e61cfa570d</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -9216,7 +9216,7 @@
     <value>{{step[3592615b-47e7-4b16-952b-7ed367f6c0e5].split_stream}}</value>
   </sys_element_mapping>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>fcdce517-2367-44a1-9425-cbab997cf577</cid>
     <extended_inputs/>
     <extended_outputs/>
@@ -9237,7 +9237,7 @@
   </sys_hub_step_instance>
   <sys_variable_value action="delete_multiple" query="document_key=e717f8b70fb02010747dc7d92f767eb0"/>
   <sys_hub_step_instance action="INSERT_OR_UPDATE">
-    <action display_value="Search for Content">a717f8b70fb02010747dc7d92f767ea8</action>
+    <action display_value="Search Content Stream">a717f8b70fb02010747dc7d92f767ea8</action>
     <cid>39cfaa3e-4c0b-403a-8840-7d3bab0c8e78</cid>
     <extended_inputs/>
     <extended_inputs/>
